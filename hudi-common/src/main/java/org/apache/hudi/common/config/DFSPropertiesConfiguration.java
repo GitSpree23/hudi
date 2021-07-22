@@ -87,7 +87,7 @@ public class DFSPropertiesConfiguration {
       BufferedReader reader = new BufferedReader(new InputStreamReader(fs.open(file)));
       addProperties(reader);
     } catch (IOException ioe) {
-      LOG.error("Error reading in properies from dfs", ioe);
+      LOG.error("Error reading in properties from dfs", ioe);
       throw new IllegalArgumentException("Cannot read properties from dfs", ioe);
     }
   }
